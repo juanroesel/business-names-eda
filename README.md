@@ -17,10 +17,10 @@ pipenv shell
 ```
 pipenv run ipython kernel install --user --name=<KERNEL_NAME>
 ```
-3. Download the SpaCy's transformer pipeline
+3. Download the required SpaCy pipelines
 
 ```
-pipenv run python -m spacy download en_core_web_trf
+pipenv run python -m spacy download en_core_web_trf && pipenv run python -m spacy download en_core_web_sm
 ```
 4. Launch the Jupyter server
 ```

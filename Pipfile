@@ -13,6 +13,8 @@ seaborn = "*"
 matplotlib = "*"
 scikit-learn = "*"
 pandas-profiling = "*"
+spacy-langdetect = "*"
+tqdm = "*"
 
 [dev-packages]
 
