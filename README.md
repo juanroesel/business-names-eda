@@ -1,5 +1,5 @@
 # gradient-ascent-ai
-Repo containing the code used to develop de EDA challenge
+Repo containing the code used to develop the "Business Names" EDA challenge.
 
 # Requirements
 
