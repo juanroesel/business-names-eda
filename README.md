@@ -1,5 +1,5 @@
-# gradient-ascent-ai
-Repo containing the code used to develop the "Business Names" EDA challenge.
+# Business Names EDA Exercise
+Repo containing the code used to develop the "Business Names" [EDA challenge](https://www.kaggle.com/code/zelalemgetahun/eda-of-7-million-company-dataset/data).
 
 # Requirements
 
