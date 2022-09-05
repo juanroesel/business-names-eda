@@ -19,7 +19,7 @@ def encode_vector(text, nlp):
 
 def vectorize(data_df, vector_df, nlp, outfile):
     for i, r in tqdm(data_df.iterrows()):
-        df = pd.DataFrame(encode_vector(r["linkedin url"], nlp))
+        df = pd.DataFrame(encode_vector(r["name"], nlp))
         vector_df = pd.concat([vector_df, df])
     vector_df = vector_df.set_index(data_df.index[:len(data_df)])
     vector_df.to_pickle(os.path.join(artifacts_path, outfile))
