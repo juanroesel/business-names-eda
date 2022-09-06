@@ -24,7 +24,7 @@ def calculate_stats(df):
         corpus_df.at[i, "has_stopwords"] = any(tok.is_stop for tok in doc)
         corpus_df.at[i, "lexical_density"] = round(compute_lexical_density(doc), 3)
         corpus_df.at[i, "has_digits"] = any(tok.text.isdigit() for tok in doc)
-        corpus_df.at[i, "has_special_chars"] = any(not c.isalnum() for c in r["name"])
+        corpus_df.at[i, "has_special_chars"] = any(not c.isalnum() for c in r["name"] if c != " ")
     corpus_df.to_pickle(os.path.join(artifacts_path, "corpus_stats.pkl"))
     print(f"{datetime.now()} - Finished!")
     return corpus_df
