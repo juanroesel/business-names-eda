@@ -6,9 +6,13 @@ I figure out what type of company it is? etc.
 
 ## Key insights
 
-* Business naming tends to include patterns such as words associated with business structure (e.g., pvt. ltd, group, corporation) words that reference the type of business it is (e.g., spa, photography, agency), or words that conform to a particular lexical structure (e.g., X and Y, X & Y).
+* Business naming tends to include patterns such as words associated with legal structure (e.g., pvt. ltd, group, corporation) words that reference the type of business it is (e.g., spa, photography, agency), or words that conform to a particular lexical structure (e.g., X and Y, X & Y).
 
-* About 3 millions businesses have their names registered in English.
+* Businesses of sizes between 201 and 1000 employees tend to include more legal structure acronyms or words than business smaller or larger in size.
+
+* The distribution of lexical density values seems heavily skewed towards 1.0, which seems reasonable if we consider that most business names have between 1-3 words, most of them usually nouns.
+
+* United States, Australia, United Kingdom, Canada, and India are the top 5 countries with the highest proportion of stopwords in their business names.
 
 * London is the city mostly associated with business names with over 68k records, followed by New York (41k), Paris (26k), Toronto (20k) and Sao Paulo (19k).
 
