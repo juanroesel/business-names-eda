@@ -1,7 +1,6 @@
 import spacy
 import os
 import pandas as pd
-import numpy as np
 from tqdm import tqdm
 from datetime import datetime
 import argparse
@@ -9,8 +8,8 @@ nlp = spacy.load("en_core_web_trf")
 
 artifacts_path = os.path.abspath("artifacts")
 
-def load_batch(path):
-    return pd.read_pickle(os.path.join(artifacts_path, path + ".pkl"))
+def load_batch(filename):
+    return pd.read_pickle(os.path.join(artifacts_path, filename + ".pkl"))
 
 def encode_vector(text, nlp):
     with nlp.select_pipes(disable=['ner', 'lemmatizer']):
